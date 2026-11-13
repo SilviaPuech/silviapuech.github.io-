@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Silvia Puech · Creadora UGC de belleza, moda y libros.</title>
+<meta name="description" content="Creadora UGC de belleza, moda y lectura. Administradora de sistemas informáticos al otro lado de las redes..">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤍</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pearl:#FBF6F3; --rose:#F1DDD8; --ink:#231A1F; --soft:#756870; --wine:#6B1E3A; --gold:#B88F6A; --line:#E2D0CA;
+  --serif:"Bodoni Moda","Didot",Georgia,serif; --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--pearl);color:var(--ink);font:300 1.05rem/1.7 var(--sans);padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);-webkit-font-smoothing:antialiased}
+.w{max-width:760px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px}
+section{padding:4rem 0}
+h2{font-size:clamp(1.9rem,7vw,2.6rem);margin-bottom:1.6rem}
+.lead{max-width:46ch;color:var(--soft);margin-bottom:2rem}
+
+/* Hero */
+header{padding:4.5rem 0 3.5rem}
+.name{font-size:clamp(3.2rem,15vw,6.2rem);letter-spacing:-.02em}
+.name em{font-weight:400;color:var(--wine)}
+.roles{margin-top:1.3rem;font-size:1.1rem;color:var(--soft)}
+.badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.8rem;background:var(--ink);color:var(--pearl);border-radius:999px;padding:.55rem 1.1rem .55rem .9rem;font:400 .85rem ui-monospace,Menlo,monospace}
+.badge i{width:8px;height:8px;border-radius:50%;background:#E3A9BC;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.badge i{animation:none}}
+
+/* Videos */
+.rose{background:var(--rose)}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.reel{aspect-ratio:9/16;border-radius:16px;display:flex;align-items:flex-end;padding:.8rem;text-decoration:none;font:italic 400 1.05rem/1.2 var(--serif);color:var(--pearl);transition:transform .25s}
+.reel:hover{transform:translateY(-4px)}
+.reel:nth-child(1){background:linear-gradient(160deg,#C79A8E,#6B1E3A)}
+.reel:nth-child(2){background:linear-gradient(160deg,#3a2a32,#231A1F);}
+.reel:nth-child(3){background:linear-gradient(160deg,#E3C3B9,#B88F6A);color:var(--ink)}
+.note{margin-top:1rem;font-size:.9rem;color:var(--soft)}
+
+/* Banda oscura */
+.dark{background:var(--ink);color:#F3E9E4}
+.dark h2{color:#F3E9E4}
+.dark .lead{color:#B9A9B0}
+.term{background:#2E2229;border:1px solid #433339;border-radius:14px;padding:1.1rem 1.25rem;font:400 .87rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;max-width:520px}
+.term .p{color:var(--gold)} .term .ok{color:#E3A9BC}
+
+/* Servicios */
+.svc{list-style:none;padding:0;border-top:1px solid var(--line)}
+.svc li{display:grid;gap:.2rem;padding:1.2rem 0;border-bottom:1px solid var(--line)}
+.svc b{font-family:var(--serif);font-weight:500;font-size:1.35rem}
+.svc span{color:var(--soft);max-width:50ch}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem;list-style:none;padding:0}
+.chips li{border:1px solid var(--gold);border-radius:999px;padding:.15rem .9rem;font-size:.88rem}
+
+/* Contacto */
+form{display:grid;gap:1rem;max-width:520px}
+label{display:grid;gap:.3rem;font-size:.9rem;color:var(--soft)}
+input,textarea{font:inherit;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink);padding:.6rem 0;border-radius:0}
+textarea{min-height:110px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--wine)}
+button{justify-self:start;font:500 1rem var(--sans);background:var(--wine);color:var(--pearl);border:0;border-radius:999px;padding:.8rem 1.8rem;cursor:pointer}
+button:disabled{opacity:.6}
+#msg{min-height:1.5em;font-size:.95rem}
+.hp{position:absolute;left:-9999px}
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line)}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.9rem;color:var(--soft)}
+footer nav{display:flex;gap:1.2rem}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <h1 class="name">Tu <em>Nombre</em></h1>
+  <p class="roles">Creadora UGC de belleza, moda y libros.</p>
+  <span class="badge"><i></i>también administradora de sistemas informáticos</span>
+</div></header>
+
+<section class="rose" id="videos"><div class="w">
+  <h2>Mi contenido</h2>
+  <p class="lead">Vídeos verticales, luz natural y un tono cercano que vende sin parecer anuncio.</p>
+  <div class="reels">
+    <a class="reel" href="https://www.tiktok.com/@tuusuario/video/ID1" rel="noopener">Belleza</a>
+    <a class="reel" href="https://www.tiktok.com/@tuusuario/video/ID2" rel="noopener">Moda</a>
+    <a class="reel" href="https://www.tiktok.com/@tuusuario/video/ID3" rel="noopener">Libros</a>
+  </div>
+  <p class="note">Cada tarjeta enlaza a un vídeo mío en TikTok.</p>
+</div></section>
+
+<section id="servicios"><div class="w">
+  <h2>Qué puedo crear para tu marca</h2>
+  <ul class="svc">
+    <li><b>Reseñas de producto</b><span>Skincare, maquillaje y accesorios probados de verdad, con opinión honesta.</span></li>
+    <li><b>Rutinas y get ready with me</b><span>Cómo encaja tu producto en un día real.</span></li>
+    <li><b>Looks y lookbooks</b><span>Moda para el día a día, con estilo propio y enlaces claros.</span></li>
+    <li><b>Reseñas de libros y papelería</b><span>Lecturas, rincones de lectura y todo lo que los rodea.</span></li>
+  </ul>
+</div></section>
+
+<section class="dark" id="tech"><div class="w">
+  <h2>Mi otro lado</h2>
+  <p class="lead">En mi trabajo administro sistemas informáticos. Eso me da un ojo técnico y ordenado, y me permite crear también contenido de tecnología, setups, apps y productividad con criterio de verdad.</p>
+  <div class="term" role="img" aria-label="Terminal: todo en orden">
+    <div><span class="p">$</span> estado --contenido</div>
+    <div class="ok">belleza ✓ moda ✓ libros ✓</div>
+    <div><span class="p">$</span> estado --servidores</div>
+    <div class="ok">todo estable · 99,9 % disponible</div>
+  </div>
+  <ul class="chips" style="color:#F3E9E4">
+    <li>Linux</li><li>Windows Server</li><li>Redes</li><li>Seguridad</li><li>Copias de seguridad</li>
+  </ul>
+</div></section>
+
+<section id="contacto"><div class="w">
+  <h2>Trabajemos juntas</h2>
+  <p class="lead">Cuéntame qué producto tienes y qué buscas. Te respondo en un par de días.</p>
+  <form id="f">
+    <input type="hidden" name="access_key" value="PEGA_AQUI_TU_CLAVE_DE_WEB3FORMS">
+    <input type="hidden" name="subject" value="Nuevo mensaje desde tu portfolio UGC">
+    <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
+    <label>Nombre o marca<input name="name" required autocomplete="name"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Mensaje<textarea name="message" required></textarea></label>
+    <button type="submit">Enviar mensaje</button>
+    <p id="msg" role="status"></p>
+  </form>
+</div></section>
+
+<footer><div class="w">
+  <span>© <span id="y"></span> Tu Nombre</span>
+  <nav>
+    <a href="https://www.tiktok.com/@tuusuario" rel="noopener">TikTok</a>
+    <a href="https://www.instagram.com/tuusuario" rel="noopener">Instagram</a>
+  </nav>
+</div></footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+var f=document.getElementById('f'),m=document.getElementById('msg'),b=f.querySelector('button');
+f.addEventListener('submit',function(e){
+  e.preventDefault(); b.disabled=true; m.textContent='Enviando…';
+  fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+    .then(function(r){return r.json()})
+    .then(function(d){
+      if(d.success){m.textContent='Mensaje enviado. Gracias, te respondo pronto.';f.reset();}
+      else{m.textContent='No se pudo enviar. Revisa los datos e inténtalo de nuevo.';}
+    })
+    .catch(function(){m.textContent='Error de conexión. Inténtalo de nuevo en un momento.';})
+    .then(function(){b.disabled=false;});
+});
+</script>
+</body>
+</html>
